@@ -24,7 +24,7 @@ class WebApplicationTests {
       final var items = restTemplate
           .exchange("/api/events", HttpMethod.GET, null, Object[].class)
           .getBody();
-      assertEquals(items.length, 1);
+      assertEquals(items.length, 0);
     }
 
     {
